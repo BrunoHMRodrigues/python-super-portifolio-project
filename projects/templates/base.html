@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %} Título Padrão {% endblock %}</title>
+    <!-- Adicione aqui links para folhas de estilo CSS, se necessário -->
+  </head>
+  <body>
+    <header>
+      <!-- Adicione o cabeçalho comum aqui -->
+      <h1>Meu Aplicativo</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Página Inicial</a></li>
+          <li><a href="/profiles/">Perfis</a></li>
+          <li><a href="/projects/">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">{% block content %} {% endblock %}</div>
+
+    <footer>
+      <!-- Adicione o rodapé comum aqui -->
+      <p>&copy; {{ year }} Meu Aplicativo</p>
+    </footer>
+
+    <!-- Adicione aqui links para scripts JavaScript, se necessário -->
+  </body>
+</html>
