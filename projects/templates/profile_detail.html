@@ -18,4 +18,26 @@
   </li>
   {% endfor %}
 </ul>
+
+<h2>Certificações</h2>
+<ul>
+  {% for certificate in certificates %}
+  <li>
+    Nome: {{ certificate.name }}<br />
+    url: {{ certificate.url }}<br />
+    Instituição: {{ certificate.certifying_institution }}<br />
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- <h2>Instituições</h2>
+<ul>
+  {% for institution in certifying_institutions %}
+  <li>
+    Nome: {{ institution.name }}<br />
+    url: {{ institution.url }}<br />
+  </li>
+  {% endfor %}
+</ul> -->
+
 {% endblock %} {% block title %} Detalhes do Perfil {% endblock %}

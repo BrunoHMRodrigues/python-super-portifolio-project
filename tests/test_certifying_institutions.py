@@ -153,6 +153,7 @@ def test_certifying_institution_post_request(client):
                                       "name",
                                       "url",
                                       "certificates"}
+    print('RESPONSE: ', response_json)
     assert response_json['id'] == 2
     assert response_json['name'] == "Certifying Institution 2"
     assert response_json['url'] == "http://myfakeurl.com"
